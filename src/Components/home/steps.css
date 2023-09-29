@@ -1,0 +1,89 @@
+:root{
+    --icon-abs-size: 2.5rem;
+}
+
+.steps{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+    background-color: #d0f6ff;
+
+    /* height: ; */
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+
+}
+.steps .headings{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 7rem;
+}
+.headings h1{
+    font-size: 40px;
+}
+.headings h2{
+    font-size: 20px;
+}
+.boxes{
+    
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 10%; /* Adjust the value as needed */
+    box-sizing: border-box;
+
+}
+
+.box{
+    position: relative;
+    width: 8rem;
+    aspect-ratio: 2/3;
+    /* border: 1px solid red; */
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+    
+    /* backdrop-filter: blur(100px); */
+}
+.box-icon{
+    display: flex;
+    /* border: 12px solid #a7f5c4; */
+    /* border-radius: 50%; */
+    
+    width: 100%;
+    aspect-ratio: 1;
+   align-items: center;
+    justify-content: center;
+    /*  background-color: rgba(167, 245, 196,0.5);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+
+}
+.box-icon  svg {
+    font-size:3rem ;
+}
+.box .abs{
+    aspect-ratio: 1;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(157, 204, 242);
+    width: var(--icon-abs-size);
+    position: absolute;
+    top: calc(var(--icon-abs-size) / -2);
+    left: calc(50% - var(--icon-abs-size) / 2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.229);
+}
+.box img{
+    width: 100%;
+    
+    /* height:80%; */
+}

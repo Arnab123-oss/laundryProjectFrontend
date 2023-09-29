@@ -1,0 +1,142 @@
+:root{
+  --navPadding: 1rem;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+p{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+nav {
+  height: 2rem;
+  width: calc(100vw - 2 * var(--navPadding));
+  background-color: white;
+  padding: var(--navPadding);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.229);
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+  /* overflow-x: hidden; */
+}
+
+nav > div {
+  display: flex;
+  align-items: center;
+}
+nav > div > svg {
+  color: red;
+  font-size: 3rem;
+}
+nav > div > a {
+  margin: 0 2rem;
+  color: red;
+  transition: color 0.3s;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav > div > a:hover {
+  color: black;
+}
+nav > div > a > svg {
+  color: red;
+  transition: inherit;
+  font-size: 1.5rem;
+}
+nav > div > a > svg:hover {
+  color: black;
+}
+.cart > a > svg {
+    font-size: 1.5rem;
+    color: #ce3434;
+ 
+  }
+  .cart:hover > a > svg{
+    color: black;
+  }
+.cart-count{
+    position: absolute;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    font-weight: 800;
+    padding: 2px 2px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    transform: translate(100%, -180%);
+}
+
+.search-box {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  top: -10px;
+ right: 50px;
+
+}
+.input-search {
+  height: 28px;
+  width: 1px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+  background-color: antiquewhite;
+  padding-right: 40px;
+  color: black;
+  box-shadow: 0 0 10px rgba(3, 3, 3, 0.361);
+
+}
+.input-search::placeholder {
+  color: rgba(216, 49, 49, 0.5);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-align: left;
+ 
+}
+.btn-search {
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color: black;
+  background-color: transparent;
+  pointer-events: painted;
+
+}
+.btn-search:focus ~ .input-search {
+  width: 300px;
+  border-radius: 0px;
+  background-color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+  border-radius: 25px;
+}
+.input-search:focus {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+  border-radius: 25px;
+
+}
