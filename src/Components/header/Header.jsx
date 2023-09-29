@@ -9,6 +9,7 @@ import logo from "../../asset/image (7).png";
 const Header = () => {
   const isAuthenticated = true;
   return (
+    <div className="header-container">
     <nav>
       <img src={logo} alt="gtysaudysa" />
 
@@ -38,6 +39,7 @@ const Header = () => {
         />
       </div>
     </nav>
+    </div>
   );
 };
 
