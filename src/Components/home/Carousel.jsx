@@ -53,30 +53,27 @@ const Carousel = () => {
   return (
     <div className="carousel-container">
       <div className="carousel-btn">
-              <FontAwesomeIcon
-                icon={faCaretLeft}
-                onClick={() => setCurrIndex(prevIndex => prevIndex - 1)}
-              />
-              <FontAwesomeIcon
-                icon={faCaretRight}
-                onClick={() => setCurrIndex(prevIndex => prevIndex + 1)}
-              />
-            </div>
+        <FontAwesomeIcon
+          icon={faCaretLeft}
+          onClick={() => setCurrIndex((prevIndex) => prevIndex - 1)}
+        />
+        <FontAwesomeIcon
+          icon={faCaretRight}
+          onClick={() => setCurrIndex((prevIndex) => prevIndex + 1)}
+        />
+      </div>
       <div className="carousel-track" ref={trackRef}>
         {slides.map((item, index) => (
           <div
             className="carousel-slide"
             style={{ background: `url(${item.img}) center/cover` }}
           >
-            <div className="carousel-curve">
-             
-            </div>
+            <div className="carousel-curve"></div>
             <div className="content">
-                <h1>fhdsfiudrhewyfre</h1>
-                <p>hgudsygudsygucdsgytuctgdsycg</p>
-                <button>uygdyusatyu</button>
-              </div>
-            
+              <h1>{item.title}</h1>
+              <p>{item.subtitle}</p>
+              <button>Read More</button>
+            </div>
           </div>
         ))}
       </div>

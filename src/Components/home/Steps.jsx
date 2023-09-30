@@ -1,10 +1,5 @@
 import React from "react";
 import "./steps.css";
-import { PiTruckLight } from "react-icons/pi";
-import { FaTruckArrowRight } from "react-icons/fa6";
-import { TbWashTemperature4 } from "react-icons/tb";
-import { TbIroning3 } from "react-icons/tb";
-import { MdOutlineDeliveryDining } from "react-icons/md";
 import lwda from "../../asset/pin.png"
 import washdry from "../../asset/washdry.png"
  import iron from "../../asset/iron.png"
@@ -18,10 +13,10 @@ const Steps = () => {
         <h1>Get it done in 4 steps</h1>
       </div>
       <div className="boxes">
-        <Box number={1} heading="Pick up" icon={<img src={lwda}/>} />
-        <Box number={2} heading="Wash & Dry" icon={<img src={washdry} />} />
-        <Box number={3} heading="Fold & Iron" icon={<img src={iron} />} />
-        <Box number={4} heading="Delivery" icon={<img src={delivery} />}/>
+        <Box number={1} heading="Pick up" icon={<img src={lwda} alt="Pick up"/> } />
+        <Box number={2} heading="Wash & Dry" icon={<img src={washdry} alt="Pick up"/>} />
+        <Box number={3} heading="Fold & Iron" icon={<img src={iron} alt="Pick up" />} />
+        <Box number={4} heading="Delivery" icon={<img src={delivery} alt="Pick up"/>}/>
         
       </div>
     </section>
