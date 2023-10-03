@@ -2,35 +2,41 @@ import React, { useEffect, useRef, useState } from "react";
 import "./carousel.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 
 const Carousel = () => {
   const [currIndex, setCurrIndex] = useState(0);
-
+  const navigate = useNavigate();
   const slides = [
     {
       img: " https://images.unsplash.com/photo-1604335398549-1b80aadd00a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80",
       title: "Test Heading",
       subtitle: "Test Sub",
+      link: "/lwda",
     },
     {
       img: "https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
       title: "Test Heading",
       subtitle: "Test Sub",
+      link: "/bwda",
     },
     {
       img: "https://unsplash.it/600?random",
       title: "Test Heading",
       subtitle: "Test Sub",
+      link: "/cwda",
     },
     {
       img: "https://unsplash.it/900?random",
       title: "Test Heading",
       subtitle: "Test Sub",
+      link: "/fwda",
     },
     {
       img: "https://unsplash.it/1200?random",
       title: "Test Heading",
       subtitle: "Test Sub",
+      link: "/vwda",
     },
   ];
   const trackRef = useRef(null);
@@ -48,6 +54,10 @@ const Carousel = () => {
     } else {
       track.style.transform = `translateX(-${100 * index}vw)`;
     }
+  };
+
+  const readHandler = (link) => {
+    navigate(link);
   };
 
   return (
@@ -72,7 +82,10 @@ const Carousel = () => {
             <div className="content">
               <h1>{item.title}</h1>
               <p>{item.subtitle}</p>
-              <button>Read More</button>
+              <button onClick={() => readHandler(item.link)}>
+                {" "}
+                Read More{" "}
+              </button>
             </div>
           </div>
         ))}
