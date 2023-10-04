@@ -220,6 +220,7 @@ nav > div > a > svg:hover {
 
   .menu-icon {
     display: block;
+    color: black;
   }
   .nav-menu {
     display: none;
@@ -236,7 +237,10 @@ nav > div > a > svg:hover {
   }
 
   .nav-item {
+    display: flex;
+    flex-direction: column;
     margin: 10px 0;
+    
   }
 
   .menu-icon {

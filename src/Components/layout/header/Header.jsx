@@ -45,7 +45,7 @@ const Header = () => {
 
   const toggleMenu = () => {
     setIsActive(!isActive);
-    document.body.style.overflow = isActive ? "auto" : "hidden";
+    // document.body.style.overflow = isActive ? "auto" : "hidden";
   };
 
   return (
