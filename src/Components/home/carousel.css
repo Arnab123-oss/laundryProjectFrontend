@@ -162,8 +162,7 @@ h1 {
  margin-left: -50px;
  background-color: #0db460
 }
-
-p {
+ /* p {
  position: relative;
  font-family: "Raleway", sans-serif;
  font-weight: 300;
@@ -172,7 +171,7 @@ p {
  -webkit-transition: all 0.4s ease 0s;
  -o-transition: all 0.4s ease 0s;
  transition: all 0.4s ease 0s;
-}
+} */
 
 .content p {
  font-size: 26px;
@@ -184,6 +183,8 @@ p {
  /* margin: auto; */
  white-space: nowrap;
  padding-bottom: 13px;
+ color: white;
+
 }
 .content p:before {
  background-color: #5cc592;
