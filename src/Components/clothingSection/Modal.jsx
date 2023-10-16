@@ -19,7 +19,7 @@ const Modal = ({ isOpen, onClose, children }) => {
         </div>
         <div className="modal-content">{children}</div>
         <div className="modal-footer">
-          <button className="modal-save" onClick={handleClose}>
+          <button className="modal-save " onClick={handleClose}>
             Save
           </button>
         </div>

@@ -13,7 +13,7 @@
 .modal {
   background: #fff;
   border-radius: 8px;
-  width: 30vw;
+  width: 25vw;
   max-width: 600px;
   height: 55vh; /* Set a maximum height for the modal */
   overflow-y: auto;
@@ -55,9 +55,8 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 
 }
 
 .modal-content {
-  padding: 0 10px;
   height: 70%;
-  width: 90%;
+  width: 100%;
   overflow-y: auto;
 }
 .modal-content::-webkit-scrollbar {

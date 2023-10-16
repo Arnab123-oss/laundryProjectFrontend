@@ -27,22 +27,28 @@ const Clothing = () => {
         <div className="clothing-box-action" onClick={openModal}>
           <AiOutlinePlus color="black" />
         </div>
-        <div className="modal-Box">
-          <Modal isOpen={isModalOpen} onClose={closeModal}>
-            <h2>Modal Content</h2>
-            <p>This is the content of the modal.ghjjjjjjjjjjjjjjjjjjjjjjjjj</p>
-            <h2>Modal Content</h2>
-            <p>This is the content of the modal.</p> <h2>Modal Content</h2>
-            <p>This is the content of the modal.</p> <h2>Modal Content</h2>
-            <p>This is the content of the modal.</p> <h2>Modal Content</h2>
-            <p>This is the content of the modal.</p> <h2>Modal Content</h2>
-            <p>This is the content of the modal.</p> <h2>Modal Content</h2>
-            <p>This is the content of the modal.</p> <h2>Modal Content</h2>
-            <p>This is the content of the modal.</p> <h2>Modal Content</h2>
-            <p>This is the content of the modal.</p> <h2>Modal Content</h2>
-  
-          </Modal>
-        </div>
+
+        <Modal isOpen={isModalOpen} onClose={closeModal}>
+          <form className="modal-Box">
+            <label>
+              <textarea type="text" placeholder="Comments" />
+            </label>
+            <label>
+              <input type="text" placeholder="Password" />
+            </label>
+            <label>
+              <input type="radio" name="gender" value="male" /> Male
+            </label>
+
+            <label>
+              <input type="radio" name="gender" value="female" /> Female
+            </label>
+
+            <label>
+              <input type="radio" name="gender" value="other" /> Other
+            </label>
+          </form>
+        </Modal>
       </div>
     </div>
   );
