@@ -1,8 +1,74 @@
-.about{
-    width: 100%;
-    background-color: #BBDAE5;
+.about {
+  position: relative;
+  width: 100%;
+  background: url("../../asset/3.jpg");
+  height: 80vh;
 }
-.choseUsSection{
-    width: 100%;
-    min-height: 50vh;
+.choseUsSection {
+  width: 100%;
+}
+.choseUsSection p {
+  position: relative;
+  margin: 0;
+  color: aliceblue;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 300;
+  font-family: "Baguet Script", cursive;
+}
+
+/* here we can also add a hover in before we have to just use .choseUsSection:hover:before instead of .choseUsSection:before */
+.choseUsSection:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.about-box-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-box {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  background-color: transparent;
+  backdrop-filter: blur(100px);
+  border: 2px solid white;
+  border-radius: 15px;
+  height: 45vh;
+  margin: 2rem;
+  align-items: center;
+}
+.about-iconBox {
+    display: flex;
+  width: 120px;
+  height: 120px;
+  margin-top: 15px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+}
+  
+.about-iconBox img {
+  width: 80px;
+  height: 80px;
+}
+.about-box-text {
+  color: black;
+  text-align: center;
+  font-weight: 600;
+}
+.about-box-text h4{
+  font-size: 1rem;
+  color: black;
 }

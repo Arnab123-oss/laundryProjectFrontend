@@ -12,7 +12,7 @@ const Carousel = () => {
       img: " https://images.unsplash.com/photo-1604335398549-1b80aadd00a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80",
       title: "Test Heading",
       subtitle: "Test Sub",
-      link: "/lwda",
+      link: "/clothes",
     },
     {
       img: "https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
@@ -83,8 +83,7 @@ const Carousel = () => {
               <h1>{item.title}</h1>
               <p>{item.subtitle}</p>
               <button onClick={() => readHandler(item.link)}>
-                {" "}
-                Read More{" "}
+                Read More
               </button>
             </div>
           </div>
