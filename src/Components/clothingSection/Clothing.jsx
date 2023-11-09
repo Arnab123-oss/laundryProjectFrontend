@@ -6,11 +6,16 @@ import Modal from "./Modal";
 const Clothing = () => {
   return (
     <div className="clothing-container">
+      
       <div className="all-verity-box">
         <VerityBox heading="FOR WOMEN CLOTHING" />
         <VerityBox heading="FOR MEN CLOTHING" />
         <VerityBox heading="FOR BAG" />
-        <VerityBox heading="FOR SHOE" />
+      </div>
+      <div className="all-verity-box">
+        <VerityBox heading="FOR WOMEN CLOTHING" />
+        <VerityBox heading="FOR MEN CLOTHING" />
+        <VerityBox heading="FOR BAG" />
       </div>
     </div>
   );
