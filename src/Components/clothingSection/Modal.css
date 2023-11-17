@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 999;
 }
 
 .modal {
@@ -19,6 +20,7 @@
   overflow-y: auto;
   position: relative;
   overflow-y: hidden;
+
 }
 
 .modal-close {
@@ -32,6 +34,9 @@
   border-radius: 50px;
   width: 40px;
   aspect-ratio: 1;
+}
+.modal-close:hover{
+  background-color: rgb(235, 235, 235);
 }
 .modal-open {
   overflow: hidden;

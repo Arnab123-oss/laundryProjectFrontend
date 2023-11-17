@@ -49,7 +49,7 @@ const VerityBox = ({ heading }) => {
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         <div>
           <div>
-            <form className="clothing-from">
+          <form className="clothing-from">
               <fieldset>
                 <legend>
                   <span className="number">1</span> Clothing Type
