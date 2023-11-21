@@ -7,6 +7,7 @@ import Footer from "./Components/layout/footer/Footer";
 import About from "./Components/About/About";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import Clothing from "./Components/clothingSection/Clothing";
+import Cart from "./Components/Cart/Cart";
 function App() {
   return (
     <Router>
@@ -25,6 +26,11 @@ function App() {
       <Routes>
         <Route path="/clothes" element={<Clothing />} />
       </Routes>
+
+      <Routes>
+        <Route path="/cart" element={<Cart />} />
+      </Routes>
+
       <Footer />
     </Router>
   );

@@ -204,16 +204,17 @@ nav > div > a > svg:hover {
   background-color: rgb(154, 208, 247);
   color: black;
   border-radius: 50%;
-  padding: 2px 6px;
+  padding: 2px 8px;
   font-size: 0.9em;
   position: absolute;
-  top: -8px;
+  top: -10px;
   right: -8px;
   font-weight: 700;
 }
 
-.cart-icon {
-  font-size: 1.5em;
+.cart-icon img{
+  width: 2em;
+  height: 2em;
   cursor: pointer;
 }
 @media (max-width: 600px) {

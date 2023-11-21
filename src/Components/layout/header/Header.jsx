@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "./Header.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FiShoppingCart, FiLogIn } from "react-icons/fi";
 import { FaUser } from "react-icons/fa";
 import { BsSearch } from "react-icons/bs";
 import logo from "../../../asset/image (7).png";
+import cart from "../../../asset/shopping-bag.png";
 
 const Header = () => {
   const isAuthenticated = true;
@@ -48,14 +49,20 @@ const Header = () => {
     // document.body.style.overflow = isActive ? "auto" : "hidden";
   };
 
+  const navigate = useNavigate();
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <div className="navbar-logo"><img src={logo} alt=""/></div>
+        <div className="navbar-logo">
+          <img src={logo} alt="" />
+        </div>
         <div className="cart-container">
           <sup className="cart-badge">{cartItems}</sup>
-          <div className="cart-icon" onClick={() => alert("Open cart")}>
-            🛒
+          <div className="cart-icon">
+            <Link to="/cart">
+             <img src={cart} alt="" />
+            </Link>
           </div>
         </div>
         <div className="menu-icon" onClick={toggleMenu}>
