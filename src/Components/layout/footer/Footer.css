@@ -1,11 +1,12 @@
 footer {
     min-height: 300px;
-    background-color: rgb(34, 36, 35);
+    background-color: #5d496b;
     padding: 4rem;
     display: grid;
     grid-template-columns: 2fr 1fr;
     color: white;
     align-items: center;
+    position: relative;
 }
 footer h2 {
     color: red;
@@ -70,4 +71,34 @@ footer aside a:hover {
         grid-template-columns: 1fr;
         text-align: center;
    }
+}
+
+/*888888888888888888888888888888888888888888888888888888************************************************************************** */
+.custom-shape-divider-top-1700642254 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1700642254 svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 129px;
+}
+
+.custom-shape-divider-top-1700642254 .shape-fill {
+    fill: #e0e0e0;;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1700642254 svg {
+        width: calc(134% + 1.3px);
+        height: 120px;
+    }
 }

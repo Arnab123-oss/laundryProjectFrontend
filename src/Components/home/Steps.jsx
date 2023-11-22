@@ -1,9 +1,9 @@
 import React from "react";
 import "./steps.css";
-import lwda from "../../asset/pin.png"
-import washdry from "../../asset/washdry.png"
- import iron from "../../asset/iron.png"
- import delivery from "../../asset/delivery.png"
+import lwda from "../../asset/Pick up truck.gif"
+import washdry from "../../asset/Laundry and dry cleaning.gif"
+ import iron from "../../asset/foldandiron.svg"
+ import delivery from "../../asset/Delivery.gif"
 
 const Steps = () => {
   return (

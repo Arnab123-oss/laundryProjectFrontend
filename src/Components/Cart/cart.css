@@ -28,10 +28,10 @@
   }
   .cartPage {
     padding: 5vmax;
-
+    background-color:  #e0e0e0;
   }
   .cartHeader {
-    background-color: rgb(142, 86, 182);
+    background-color: #5d496b;
     width: 90%;
     box-sizing: border-box;
     margin: auto;
@@ -85,8 +85,9 @@
       width: 2.5vmax;
       text-align: center;
       outline: none;
-      font: 400 0.8vmax "Roboto";
+      font: 400 1.25vmax "Roboto";
       color: rgba(0, 0, 0, 0.74);
+      background-color: #e0e0e0;
     }
     .cartInput >input::-webkit-outer-spin-button,
     .cartInput >input::-webkit-inner-spin-button {
@@ -109,7 +110,7 @@
     }
     
     .cartGrossProfitBox {
-      border-top: 3px solid tomato;
+      border-top: 3px solid #5d496b;
       margin: 1vmax 4vmax;
       box-sizing: border-box;
       padding: 2vmax 0;
@@ -119,10 +120,10 @@
     }
     .checkOutBtn {
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
     }
     .checkOutBtn > a {
-      background-color: tomato;
+      background-color: #5d496b;
       color: white;
       border: none;
       padding: 0.8vmax 4vmax;

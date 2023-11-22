@@ -82,9 +82,41 @@ const Carousel = () => {
             <div className="content">
               <h1>{item.title}</h1>
               <p>{item.subtitle}</p>
-              <button onClick={() => readHandler(item.link)}>
+              {/*<button onClick={() => readHandler(item.link)}>Read More</button>*/}
+
+              <button
+                className="c-button c-button--gooey"
+                onClick={() => readHandler(item.link)}
+              >
                 Read More
+                <div className="c-button__blobs">
+                  <div />
+                  <div />
+                  <div />
+                </div>
               </button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                style={{ display: "block", height: 0, width: 0 }}
+              >
+                <defs>
+                  <filter id="goo">
+                    <feGaussianBlur
+                      in="SourceGraphic"
+                      stdDeviation={10}
+                      result="blur"
+                    />
+                    <feColorMatrix
+                      in="blur"
+                      mode="matrix"
+                      values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                      result="goo"
+                    />
+                    <feBlend in="SourceGraphic" in2="goo" />
+                  </filter>
+                </defs>
+              </svg>
             </div>
           </div>
         ))}

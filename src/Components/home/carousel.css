@@ -229,7 +229,7 @@ button:hover {
 button:active {
  transform: translateY(-1px);
 } */
-
+/*
 .content button{
   width: 150px;
   padding: 10px;
@@ -252,7 +252,7 @@ button:active {
   filter: hue-rotate(-54deg);
  }
  
- 
+ /*
 
 /* ******************************************************************************************************** */
 /* .banner {
@@ -328,3 +328,78 @@ button:active {
   max-width: 100%;
  }
   */
+  .c-button {
+    
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: Roboto;
+    text-decoration: none;
+    padding: 0.9em 1.6em;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .c-button--gooey {
+    width: 150px;
+  padding: 10px;
+  border-radius: 20px;
+    color: black;
+    letter-spacing: 2px;
+    border: 2px solid #5d496b;
+    position: relative;
+    transition: all 700ms ease;
+  }
+  
+  .c-button--gooey .c-button__blobs {
+    height: 100%;
+     border-radius: 13px;
+    filter: url(#goo);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -3px;
+    right: -1px;
+    z-index: -1;
+  }
+  
+  .c-button--gooey .c-button__blobs div {
+    background-color: #5d496b;
+    width: 34%;
+    height: 100%;
+    border-radius: 100%;
+    position: absolute;
+    transform: scale(1.4) translateY(125%) translateZ(0);
+    transition: all 700ms ease;
+  }
+  
+  .c-button--gooey .c-button__blobs div:nth-child(1) {
+    left: -5%;
+  }
+  
+  .c-button--gooey .c-button__blobs div:nth-child(2) {
+    left: 30%;
+    transition-delay: 60ms;
+  }
+  
+  .c-button--gooey .c-button__blobs div:nth-child(3) {
+    left: 66%;
+    transition-delay: 25ms;
+  }
+  
+  .c-button--gooey:hover {
+    color: #fff;
+  }
+  
+  .c-button--gooey:hover .c-button__blobs div {
+    transform: scale(1.4) translateY(0) translateZ(0);
+  }
+
+
+
+
+  /* *********************************************************************************************************************************** */
