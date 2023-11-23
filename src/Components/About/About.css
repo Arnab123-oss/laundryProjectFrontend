@@ -1,3 +1,7 @@
+.about-container{
+  width: 100%;
+  min-height: 50vh;
+}
 .about {
   position: relative;
   width: 100%;
@@ -6,6 +10,7 @@
 }
 .choseUsSection {
   width: 100%;
+ 
 }
 .choseUsSection p {
   position: relative;
@@ -72,3 +77,30 @@
   font-size: 1rem;
   color: black;
 }
+
+.process{
+  width: 100%;
+  height: 50vh;
+  background: #e0e0e0;
+
+}
+.how-we-work{
+  background-color:#e0e0e0;
+  font-family: "Sofia", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  padding: 0.8rem;
+
+}
+.process-animation{
+width: 100%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+}
+.process img{
+  width: 250px;
+
+}
+

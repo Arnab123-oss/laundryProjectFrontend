@@ -7,9 +7,15 @@ import about2 from "../../asset/about2.png";
 import about3 from "../../asset/about3.png";
 import about4 from "../../asset/about4.png";
 
+import pickup from "../../asset/Laundry-basket.gif";
+import wash from "../../asset/Laundry-wash.gif";
+import iron from "../../asset/Laundry-iron.gif";
+import delivery from "../../asset/Laundry-purple-top.gif";
+
 const About = () => {
   return (
-    <section className="about">
+    <div className="about-container">
+        <div className="about">
       <div className="choseUsSection">
         <p>Why Choose Us?</p>
       </div>
@@ -47,7 +53,23 @@ const About = () => {
           heading="Sustainable Packaging"
         />
       </div>
-    </section>
+    </div>
+    <div className="process">
+    <div className="how-we-work">
+          <h2>How We Work</h2>
+      </div>
+      <div className="process-animation">
+      <img src={pickup}/>
+        <img src={wash}/>
+        <img src={iron}/>
+        <img src={delivery}/> 
+      </div>
+     <div>
+
+     </div>
+    </div>
+    </div>
+
   );
 };
 
