@@ -10,9 +10,13 @@ const Home = () => {
 
       <Steps />
       <div className="review-section">
-        <h1>
-          <u>Reviews </u>
-        </h1>
+        <div className="review-border">
+        <div className="review-line"></div>
+          <h1>
+            <u>Reviews </u>
+          </h1>
+          <div className="review-line"></div>
+        </div>
 
         <div className="reviews">
           <div class="card">

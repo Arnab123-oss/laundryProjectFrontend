@@ -1,9 +1,9 @@
 import React from "react";
 import "./steps.css";
-import lwda from "../../asset/Pick up truck.gif"
-import washdry from "../../asset/Laundry and dry cleaning.gif"
- import iron from "../../asset/foldandiron.svg"
- import delivery from "../../asset/Delivery.gif"
+import lwda from "../../asset/Pick up truck.gif";
+import washdry from "../../asset/Laundry and dry cleaning.gif";
+import iron from "../../asset/foldandiron.svg";
+import delivery from "../../asset/Delivery.gif";
 
 const Steps = () => {
   return (
@@ -17,96 +17,112 @@ const Steps = () => {
     //     <Box number={2} heading="Wash & Dry" icon={<img src={washdry} alt="Pick up"/>} />
     //     <Box number={3} heading="Fold & Iron" icon={<img src={iron} alt="Pick up" />} />
     //     <Box number={4} heading="Delivery" icon={<img src={delivery} alt="Pick up"/>}/>
-        
+
     //   </div>
     // </section>
     <section class="services">
-
-    <div class="s-box-container">
-  
-    <div class="s-box">
- 
-    <div class="bar"></div>
-
-    <img alt="1" src="pexels-web-donut-19090.jpg" />
-  
-    <h1>Spend Money</h1>
- 
-        <p>Track on your all daily expense and make your day to life easier.</p>
-
-    <a class="s-btn" href="#">More</a>
+    <div className="services-section">
+        <h1>
+          <u>Our Services</u>
+        </h1>
     </div>
- 
-    <div class="s-box">
-
-    <div class="bar"></div>
-   
-    <img alt="2" src="pexels-web-donut-19090.jpg" />
-  
-    <h1>Set Budget</h1>
-    
-        <p>Make a Budget That Fit Right With You And Can Do Most With It</p>
-  
-    <a class="s-btn" href="#">More</a>
-    </div>
-        
-    <div class="s-box">
-   
-    <div class="bar"></div>
-    
-    <img alt="3" src="pexels-web-donut-19090.jpg" />
-   
-    <h1>Security</h1>
-
-        <p>We Store All Card Info And Money Safe To Make You Relax And Crazy</p>
- 
-    <a class="s-btn" href="#">More</a>
-    </div>
-    </div>
-    
-      
-        <div class="s-box-container">
-     
+      <div class="s-box-container">
         <div class="s-box">
-     
-        <div class="bar"></div>
- 
-        <img alt="1" src="pexels-web-donut-19090.jpg" />
-     
-        <h1>Spend Money</h1>
-     
-            <p>Track on your all daily expense and make your day to life easier.</p>
-     
-        <a class="s-btn" href="#">More</a>
+
+          <div class="bar"></div>
+{/* 
+          <img alt="1" src= "https://images.unsplash.com/photo-1469504512102-900f29606341?q=80&w=1825&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" /> */}
+
+          <h1>Clothes Cleaning</h1>
+
+          <p>
+            Track on your all daily expense and make your day to life easier.
+          </p>
+
+          <a class="s-btn" href="#">
+            More
+          </a>
         </div>
-        
+
         <div class="s-box">
-      
-        <div class="bar"></div>
-      
-        <img alt="2" src="pexels-web-donut-19090.jpg" />
-  
-        <h1>Set Budget</h1>
-     
-            <p>Make a Budget That Fit Right With You And Can Do Most With It</p>
-   
-        <a class="s-btn" href="#">More</a>
+          <div class="bar"></div>
+
+          {/* <img alt="2" src="pexels-web-donut-19090.jpg" /> */}
+
+          <h1>Clothes Ironing</h1>
+
+          <p>Make a Budget That Fit Right With You And Can Do Most With It</p>
+
+          <a class="s-btn" href="#">
+            More
+          </a>
         </div>
-      
+
         <div class="s-box">
-      
-        <div class="bar"></div>
-      
-        <img alt="3" src="pexels-web-donut-19090.jpg" />
-    
-        <h1>Security</h1>
-      
-            <p>We Store All Card Info And Money Safe To Make You Relax And Crazy</p>
-       
-        <a class="s-btn" href="#">More</a>
+          <div class="bar"></div>
+
+          {/* <img alt="3" src="pexels-web-donut-19090.jpg" /> */}
+
+          <h1>Clothes Stitching</h1>
+
+          <p>
+            We Store All Card Info And Money Safe To Make You Relax And Crazy
+          </p>
+
+          <a class="s-btn" href="#">
+            More
+          </a>
         </div>
+      </div>
+
+      <div class="s-box-container">
+        <div class="s-box">
+          <div class="bar"></div>
+
+          {/* <img alt="1" src="pexels-web-donut-19090.jpg" /> */}
+
+          <h1>Clothes Alteration</h1>
+
+          <p>
+            Track on your all daily expense and make your day to life easier.
+          </p>
+
+          <a class="s-btn" href="#">
+            More
+          </a>
         </div>
-        </section>
+
+        <div class="s-box">
+          <div class="bar"></div>
+
+          {/* <img alt="2" src="pexels-web-donut-19090.jpg" /> */}
+
+          <h1>Home Cleaning</h1>
+
+          <p>Make a Budget That Fit Right With You And Can Do Most With It</p>
+
+          <a class="s-btn" href="#">
+            More
+          </a>
+        </div>
+
+        <div class="s-box">
+          <div class="bar"></div>
+
+          {/* <img alt="3" src="pexels-web-donut-19090.jpg" /> */}
+
+          <h1>Car Wash</h1>
+
+          <p>
+            We Store All Card Info And Money Safe To Make You Relax And Crazy
+          </p>
+
+          <a class="s-btn" href="#">
+            More
+          </a>
+        </div>
+      </div>
+    </section>
   );
 };
 

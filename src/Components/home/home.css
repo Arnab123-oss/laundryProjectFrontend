@@ -66,6 +66,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center; */
+  padding-top: 2rem;
+}
+.review-border{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.review-line{
+  width: 45%;
+  height: .5vh;
+  background-color: #5d496b;
+  /* margin: 0 5px; */
 }
 .reviews{
   width: 100%;

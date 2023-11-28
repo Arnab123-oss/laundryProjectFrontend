@@ -8,6 +8,7 @@ import About from "./Components/About/About";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import Clothing from "./Components/clothingSection/Clothing";
 import Cart from "./Components/Cart/Cart";
+import From from "./Components/clothingSection/From";
 function App() {
   return (
     <Router>
@@ -30,6 +31,10 @@ function App() {
       <Routes>
         <Route path="/cart" element={<Cart />} />
       </Routes>
+
+      {/* <Routes>
+        <Route path="/form" element={<From />} />
+      </Routes> */}
 
       <Footer />
     </Router>
