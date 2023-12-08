@@ -10,33 +10,38 @@ const Carousel = () => {
   const slides = [
     {
       img: " https://images.unsplash.com/photo-1604335398549-1b80aadd00a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80",
-      title: "Test Heading",
-      subtitle: "Test Sub",
+      title: "LAUNDRY SERVICES",
+      subtitle: "We Clean anything & Everything",
       link: "/clothes",
+      btnname:"Book now"
     },
     {
-      img: "https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-      title: "Test Heading",
-      subtitle: "Test Sub",
+      img: "https://images.unsplash.com/photo-1607729715312-5ace53575064?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "HOME SERVICES",
+      subtitle: "We Clean anything & Everything",
       link: "/bwda",
+      btnname:"Book now"
     },
     {
-      img: "https://unsplash.it/600?random",
-      title: "Test Heading",
-      subtitle: "Test Sub",
+      img: "https://images.unsplash.com/photo-1616804087352-0d82fc0c37bf?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "CAR CLEANING",
+      subtitle: "We Clean anything & Everything",
       link: "/cwda",
+      btnname:"Book now"
     },
     {
       img: "https://unsplash.it/900?random",
-      title: "Test Heading",
-      subtitle: "Test Sub",
+      title: "TAILORING SERVICES",
+      subtitle: "Stitch your own comfort",
       link: "/fwda",
+      btnname:"Book now"
     },
     {
       img: "https://unsplash.it/1200?random",
-      title: "Test Heading",
-      subtitle: "Test Sub",
+      title: "PROPS",
+      subtitle: "BUY YOUR OWN COLLECTION",
       link: "/vwda",
+      btnname:"Buy now"
     },
   ];
   const trackRef = useRef(null);
@@ -88,7 +93,7 @@ const Carousel = () => {
                 className="c-button c-button--gooey"
                 onClick={() => readHandler(item.link)}
               >
-                Read More
+              {item.btnname}
                 <div className="c-button__blobs">
                   <div />
                   <div />

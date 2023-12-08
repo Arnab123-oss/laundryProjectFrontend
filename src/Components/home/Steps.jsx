@@ -23,7 +23,7 @@ const Steps = () => {
     <section class="services">
     <div className="services-section">
         <h1>
-          <u>Our Services</u>
+          <u>What We Do</u>
         </h1>
     </div>
       <div class="s-box-container">
