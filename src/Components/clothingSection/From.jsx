@@ -13,24 +13,38 @@ const From = ({setIsOpen}) => {
         <div className="book" onClick={(event) => event.stopPropagation()}>
         <h1 className="close-button" onClick={() => setIsOpen(false)}>X</h1>
           <div className="pg pg1">
-            <div style={{ marginLeft: "10px" }}>
-              <form className="clothing-form">
-                <label for="name">Which type of clothing:</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="user_name"
-                  placeholder="Sharee or shirts or etc......"
-                />
-                <label for="mail">Brand Name:</label>
-                <input
-                  type="text"
-                  id="mail"
-                  name="user_email"
-                  placeholder="ZARA or Gucci or Unknown......"
-                />
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="user_password" />
+            <div className="second-form">
+              <form>
+              <label for="clothingType">Type of Clothing:</label>
+                    <select id="clothingType" name="clothingType" required>
+                        <option value="shirt">Shirt</option>
+                        <option value="pants">Pants</option>
+                        <option value="dress">Dress</option>
+                        <option value="jacket">Jacket</option>
+                    </select>
+                    
+                    <div class="brand-section">
+                        <label class="brand-label">Brand Name (optional):</label>
+                        <input type="radio" id="brandNike" name="brandName" value="Nike" class="brand-option"/>
+                        <label for="brandNike">Nike</label>
+                        <input type="radio" id="brandPuma" name="brandName" value="Puma" class="brand-option"/>
+                        <label for="brandPuma">Puma</label>
+            
+                        <input type="radio" id="brandGucci" name="brandName" value="Gucci" class="brand-option"/>
+                        <label for="brandGucci">Gucci</label>
+            
+                        <input type="radio" id="brandPrada" name="brandName" value="Prada" class="brand-option"/>
+                        <label for="brandPrada">Prada</label>
+            
+                        <input type="radio" id="brandLV" name="brandName" value="Louis Vuitton" class="brand-option"/>
+                        <label for="brandLV">Louis Vuitton</label>
+            
+                        <input type="radio" id="brandOther" name="brandName" value="Other" class="brand-option"/>
+                        <label for="brandOther">Other</label>
+                        <textarea id="pickupAddress" name="pickupAddress" rows="1" required></textarea>
+                     
+                    </div>
+                    
               </form>
               <span style={{ marginRight: "330px" }}></span>
               <button
@@ -54,31 +68,31 @@ const From = ({setIsOpen}) => {
             </div>
           </div>
           <div className="pg pg2">
-            {" "}
-            <div>
-              <form className="clothing-form">
-                <label for="name">Which type of clothing:</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="user_name"
-                  placeholder="Sharee or shirts or etc......"
-                />
-                <label for="mail">Brand Name:</label>
-                <input
-                  type="text"
-                  id="mail"
-                  name="user_email"
-                  placeholder="ZARA or Gucci or Unknown......"
-                />
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="user_password" />
+            <div className="second-form">
+              <form>
+              <label for="pickupAddress">Pick-up Address:</label>
+                <textarea id="pickupAddress" name="pickupAddress" rows="4" required></textarea>
+
+                 <div class="brand-section">
+                        <label class="brand-label">Express Service:</label>
+                        <br/>
+                        <input type="radio" id="brandNike" name="brandName" value="Nike" class="brand-option"/>
+                        <label for="brandNike"><i>One day Pick-up and Delivery</i> <p>(Within a day + extra charge included)</p></label>
+            
+                        <input type="radio" id="brandAdidas" name="brandName" value="Adidas" class="brand-option"/>
+                        <label for="brandAdidas"><i>Normal Pick-up & Delivery</i> <p>(Within a week)</p></label>
+                    </div>
+                    
               </form>
+
+
+              <div className="submit-section">
               <button
                 className="flip-button"
                 onClick={() => toggleFlipped(document.querySelector(".book"))}
               >
-                <svg
+                <div>
+                <svg 
                   width="39"
                   height="20"
                   viewBox="0 0 92 40"
@@ -91,11 +105,12 @@ const From = ({setIsOpen}) => {
                     stroke-width="7"
                   />
                 </svg>
+                </div>
               </button>
-              <span style={{ marginRight: "260px" }}></span>
               <button className="flip-buttons" type="submit"  onClick={() => setIsOpen(false)}>
                 Save
               </button>
+              </div>
             </div>
           </div>
         </div>

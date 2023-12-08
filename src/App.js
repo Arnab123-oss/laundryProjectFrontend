@@ -9,6 +9,7 @@ import ContactUs from "./Components/ContactUs/ContactUs";
 import Clothing from "./Components/clothingSection/Clothing";
 import Cart from "./Components/Cart/Cart";
 import From from "./Components/clothingSection/From";
+import Shipping from "./Components/Cart/Shipping";
 function App() {
   return (
     <Router>
@@ -32,9 +33,9 @@ function App() {
         <Route path="/cart" element={<Cart />} />
       </Routes>
 
-      {/* <Routes>
-        <Route path="/form" element={<From />} />
-      </Routes> */}
+      <Routes>
+        <Route path="/shipping" element={<Shipping />} />
+      </Routes>
 
       <Footer />
     </Router>

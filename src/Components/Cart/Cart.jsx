@@ -64,7 +64,7 @@ const Cart = () => {
               <p className="cartSubtotal">{`₹${50 * 25}`}</p>
             </div>
             <div className="cartContainer">
-              <CartItemCard />{" "}
+              <CartItemCard />
               {/* item={item} deleteCartItems={deleteCartItems}  */}
               <div className="cartInput">
                 <button onClick={() => decreaseQuantity(0, 1)}>-</button>
@@ -74,7 +74,7 @@ const Cart = () => {
               <p className="cartSubtotal">{`₹${50 * 25}`}</p>
             </div>
             <div className="cartContainer">
-              <CartItemCard />{" "}
+              <CartItemCard />
               {/* item={item} deleteCartItems={deleteCartItems}  */}
               <div className="cartInput">
                 <button onClick={() => decreaseQuantity(0, 1)}>-</button>
