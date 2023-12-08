@@ -23,7 +23,7 @@ const Carousel = () => {
       btnname:"Book now"
     },
     {
-      img: "https://images.unsplash.com/photo-1616804087352-0d82fc0c37bf?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      img: "https://images.unsplash.com/photo-1598453527201-a9b82a34f7d9?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "CAR CLEANING",
       subtitle: "We Clean anything & Everything",
       link: "/cwda",
